@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        Zadatak 1 - Web aplikacije, Luka Blašković
-      </div>
+      <div class="d-flex align-center">Zadatak WA-001 - Luka Blašković</div>
 
       <v-spacer></v-spacer>
     </v-app-bar>
