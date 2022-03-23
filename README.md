@@ -1,4 +1,5 @@
-# Web aplikacije - Zadatak WA-001
+# Web aplikacije - FIPU
 
  Luka Blašković, 0303088177 - Web aplikacije
-#### Opis zadatka: VUE.js aplikacija za ispis GIT commiteva
+#### Zadatak 1 - WA-001: VUE.js aplikacija za ispis GIT commiteva
+#### Zadatak 2 - WA-002: Vuetify datatable
