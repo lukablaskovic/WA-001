@@ -12,7 +12,7 @@
       >Objavljeno: {{ date.slice(0, 10) }}
     </v-card-subtitle>
     <v-card-actions>
-      <v-btn @click.native="$router.push('/')" color="orange" text>
+      <v-btn @click.native="$router.push('/wa001')" color="orange" text>
         Povratak
       </v-btn>
     </v-card-actions>

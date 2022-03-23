@@ -35,7 +35,7 @@
 <script>
 import axios from "axios";
 export default {
-  name: "Home",
+  name: "WA001",
   async created() {
     const response = await axios.get(
       "https://api.github.com/repos/vuejs/vue/commits"

@@ -1,15 +1,21 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import WA001 from "../views/WA001View.vue";
+import WA002 from "../views/WA002View.vue";
 import Details from "../components/Details.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
+    path: "/wa001",
+    name: "WA001",
+    component: WA001,
+  },
+  {
+    path: "/wa002",
+    name: "WA002",
+    component: WA002,
   },
   {
     path: "/details/:sha",
@@ -24,5 +30,5 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
-
+router.replace("wa001");
 export default router;
