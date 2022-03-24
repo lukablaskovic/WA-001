@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mx-auto mt-12" max-width="520" tile>
+    <v-card class="mx-auto mt-12" max-width="580" tile>
       <v-list dense>
         <v-list-item>
           <v-container>
