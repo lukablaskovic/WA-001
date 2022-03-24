@@ -4,10 +4,15 @@
       <v-row justify="center" no-gutters>
         <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
           {{ appTitle }}
+          <a href="https://github.com/lukablaskovic" target="_blank">
+            <v-app-bar-nav-icon
+              ><img src="@/assets/github.png"
+            /></v-app-bar-nav-icon>
+          </a>
         </v-col>
         <v-btn
           v-for="link in links"
-          :key="link"
+          :key="link.id"
           color="white"
           text
           rounded
@@ -18,9 +23,9 @@
         </v-btn>
       </v-row>
     </v-footer>
-    <v-content>
+    <v-main>
       <router-view :key="$route.path" />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -31,8 +36,8 @@ export default {
     return {
       appTitle: "WA zadaće - Luka Blašković",
       links: [
-        { name: "WA001", path: "/wa001" },
-        { name: "WA002", path: "/wa002" },
+        { id: 1, name: "WA001", path: "/wa001" },
+        { id: 2, name: "WA002", path: "/wa002" },
       ],
     };
   },
