@@ -1,4 +1,15 @@
-let home = (req, res) => res.send("Hello World, ovaj puta iz paketa!");
-let student = (req, res) => res.send("Ruta za studente preko novog paketa.");
+import moment from "moment";
 
-export default { home, student }; // na kraju navodimo koje JS objekte treba exportat
+function currentTime() {
+  let now = moment().format("DD.MM.YYYY HH:mm");
+  return now;
+}
+let weather = ["sunčano", "kišovito", "oblačno"];
+function random(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+let datum = (req, res) => res.send(currentTime());
+let prognoza = (req, res) => res.send(`Danas će biti ${random(weather)}.`);
+
+export default { datum, prognoza }; // na kraju navodimo koje JS objekte treba exportat
