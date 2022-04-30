@@ -1,7 +1,9 @@
 import express from "express";
 import routes from "./routes.js";
+import cors from "cors";
 const app = express();
-const port = 3500;
+app.use(cors());
+const port = 5000;
 
 app.get("/datum", routes.datum);
 app.get("/prognoza", routes.prognoza);

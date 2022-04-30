@@ -5,6 +5,8 @@ const app = express();
 const port = 3600;
 
 app.get("/dodaj", routes.dodaj);
-let list = app.get("/dohvati", routes.dohvati);
+app.get("/dohvati", routes.dohvati);
+
+const staticMiddleware = express.static("public"); //direktorij sa statičkim datotekama
 
 app.listen(port, () => console.log(`Slušam na portu ${port}!`));

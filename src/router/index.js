@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import WA001 from "../views/WA001View.vue";
 import WA002 from "../views/WA002View.vue";
+import WA103 from "../views/WA103View.vue";
 import WABLIC01 from "../views/WA-BLIC-01.vue";
 import Details from "../components/Details.vue";
 import BookDetails from "../components/BookDetails.vue";
@@ -35,6 +36,11 @@ const routes = [
     name: "book-details",
     component: BookDetails,
     props: true,
+  },
+  {
+    path: "/wa103",
+    name: "WA103",
+    component: WA103,
   },
 ];
 

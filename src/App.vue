@@ -39,6 +39,7 @@ export default {
         { id: 1, name: "WA001", path: "/wa001" },
         { id: 2, name: "WA002", path: "/wa002" },
         { id: 3, name: "WA-BLIC-01", path: "/wa-blic-01" },
+        { id: 4, name: "WA103", path: "/wa103" },
       ],
     };
   },
